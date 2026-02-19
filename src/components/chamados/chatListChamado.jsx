@@ -1,7 +1,7 @@
 export default function ChatListContact({usuario, texto, tempo, naoLida, qtdNaoLida, isLast}) {
   return (
     <li class={isLast ? ("p-2 bg-body-tertiary"):("p-2 border-bottom bg-body-tertiary") }>
-        <a href="#!" className="d-flex justify-content-between">
+        <a href="#" className="d-flex justify-content-between">
         <div class="d-flex flex-row">
             <img src={usuario.foto} alt="avatar"
             class="rounded-circle d-flex align-self-center me-3 shadow-1-strong" width="60"/>
