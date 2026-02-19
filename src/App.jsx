@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { HashRouter, BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { useState } from "react";
 
 import Navbar from "./components/gerais/navbar";
@@ -14,7 +14,7 @@ function App() {
   const [usuarioLogado, setUsuarioLogado] = useState(null);
 
   return (
-    <BrowserRouter>
+    <HashRouter>
 
       <div className="container">
         {usuarioLogado && <Navbar />}
@@ -73,7 +73,7 @@ function App() {
           />
         </Routes>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
